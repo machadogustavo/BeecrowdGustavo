@@ -1,30 +1,42 @@
-var input = require("fs").readFileSync("./stdin", "utf8");
-var lines = input.split("\n");
+var input = require('fs').readFileSync('stdin', 'utf8');
+var lines = input.split('\n')
 
-var valoresEntrada = lines[0].split(' ');
-var A = parseFloat(valoresEntrada[0])
-var numeroPositivos = 0
-var media = 0
+var a = parseFloat(lines[0])
+var b = parseFloat(lines[1])
+var c = parseFloat(lines[2])
+var d = parseFloat(lines[3])
+var e = parseFloat(lines[4])
+var f = parseFloat(lines[5])
+var tPosi = 0
+var qPosi = 0
 
-console.log(A);
-console.log(numeroPositivos);
-console.log(media);
-
-function positivosMedia(A){
-
-    for(i = 0; i < 5; i++){
-        
-        if(A > 0){
-            numeroPositivos += numeroPositivos
-            media += A
-            console.log(`${numeroPositivos} valores positivos\n${media/numeroPositivos}`);
-            A = parseFloat(valoresEntrada[0]++)
-            console.log(numeroPositivos);
-        }
-       
+function vPosi () {
+    if (a > 0) {
+        tPosi += 1
+        qPosi += a
     }
-
+    if (b > 0) {
+        tPosi += 1
+        qPosi += b
+    }
+    if (c > 0) {
+        tPosi += 1
+        qPosi += c
+    }
+    if (d > 0) {
+        tPosi += 1
+        qPosi += d
+    }
+    if (e > 0) {
+        tPosi += 1
+        qPosi += e
+    }
+    if (f > 0) {
+        tPosi += 1
+        qPosi += f
+    }
+    media = qPosi / tPosi
+    console.log(tPosi + ' valores positivos\n' + media.toFixed(1))
 }
 
-positivosMedia()
-
+vPosi()
