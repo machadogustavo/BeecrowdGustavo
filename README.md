@@ -1,5 +1,11 @@
-<h1>BeecrowdGustavo</h1>
-<h4>Gustavo P. Machado</h4>
-Problemas Beecrowd Resolvidos - Web I - UNIFESSPA
+<img src="./BeecrowdProjectThumb.png" width=50%>
 
-Insira as entradas no arquivo stdin.
+<h1>BeecrowdGustavo</h1>
+<strong>Javascript, Python, C#, SQL</strong>
+
+Resoluções de alguns desafios do
+[Beecrowd](https://www.beecrowd.com.br/judge/pt/categories) 
+para Web I e estudo.</p>
+
+
+    * Insira as entradas no arquivo .stdin.
